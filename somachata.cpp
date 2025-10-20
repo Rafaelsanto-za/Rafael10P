@@ -12,10 +12,11 @@ int main()
 	float n, soma = 0;
 	string numeros[10] = {};
 
-	for (int i = 0; i < 11; i++)
+	for (int i = 0; i < 10; i++)
 	{
-		cout << "[94mEscolhe um número: [95m";
+		cout << "Escolhe um nÃºmero: ";
 		cin >> n;
+
 		if (n < 0)
 		{
 			quantos = quantos + 1;
@@ -24,21 +25,20 @@ int main()
 
 	}
 
-	cout << "\n\n[0mQueres saber quantos números negativo meteste [31m(1) [0mou a soma deles [31m(2) [0m?: ";
+	cout << "\n\nQueres saber quantos nÃºmeros negativo meteste (1) ou a soma deles (2) ?: ";
 	cin >> r;
 
 	if (r == 1)
 	{
-		cout << "\nMeteste [96m" << quantos << " [0mnúmeros negativos\n";
+		cout << "\ninseriste " << quantos << " nÃºmeros negativos\n";
 	}
 	else if (r == 2)
 	{
-		cout << "A soma dos números negativos é [93m" << soma << "\n[0m";
+		cout << "A soma dos nÃºmeros  Ã© " << soma << "\n";
 	}
 	else
 	{
-		cout << "[31mEscolhe entre 1 e 2\n[0m";
+		cout << "Escolhe entre 1 e 2\n";
 	}
 
 	return 0;
-}
