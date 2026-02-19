@@ -10,15 +10,17 @@ int main() {
 	setlocale(LC_ALL, "Portuguese");
 	srand(time(0));
 
-	int N, A[1000], somar = 0, altmax = 0;
+	int N, A[1000], somar = 0, alturaM;
 	cin >> N;
+
 	for (int i = 0; i < N; i++)
 	{
 		cin >> A[i];
-		if (A[i] > altmax)
+
+		if (A[i] > alturaM)
 		{
 			somar++;
-			altmax = A[i];
+		    alturaM = A[i];
 		}
 	}
 	cout << somar;
